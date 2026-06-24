@@ -1,0 +1,696 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling für den Button */
+button#dark-mode-toggle {
+    background-color: transparent; /* Hintergrund transparent */
+    border: none; /* Keine Rahmen */
+    cursor: pointer;
+    font-size: 20px; /* Größe des Icons */
+    color: #333; /* Standardfarbe */
+    transition: color 0.3s ease;
+    padding: 5px;
+
+}
+
+/* Hover-Effekt */
+button#dark-mode-toggle:hover {
+    color: #00796b; /* Grüner Farbton beim Hover */
+}
+
+/* Dark Mode: Button-Farbe ändern */
+body.dark-mode button#dark-mode-toggle {
+    color: #fbc02d; /* Helle Farbe im Dark Mode (z. B. Gelb für die Sonne) */
+    background-color: #121212; /* Dunkler Hintergrund */
+}
+
+/* Dark Mode - Allgemeines Styling */
+body.dark-mode {
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helle Schrift */
+}
+
+body.dark-mode button#dark-mode-toggle {
+    background-color: #e0e0e0; /* Heller Button im Dark Mode */
+    color: #121212; /* Dunkle Schrift */
+}
+
+body.dark-mode .top-bar {
+    background-color: #1e1e1e; /* Dunkler Hintergrund für die Top-Bar */
+    color: #e0e0e0;
+    border-bottom: 1px solid #444; /* Dunklerer Rand */
+}
+
+body.dark-mode .header {
+    background-color: #1e1e1e; /* Dunkler Hintergrund für den Header */
+    color: #e0e0e0;
+}
+
+body.dark-mode .navigation a {
+    color: #80cbc4; /* Hellgrüne Links im Dark Mode */
+}
+
+body.dark-mode .navigation a:hover {
+    color: #b2dfdb; /* Hellerer Grünton beim Hover */
+}
+
+body.dark-mode .hero, body.dark-mode .hero2, body.dark-mode .hero3, body.dark-mode .hero4 {
+    background-color: #1e1e1e; /* Dunkler Hintergrund für Heldenbereiche */
+    color: #e0e0e0;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Dunkler Footer */
+    color: #e0e0e0;
+}
+
+body.dark-mode #about {
+    background-color: #1e1e1e; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helle Schriftfarbe */
+}
+
+body.dark-mode .about-list ul li::before {
+    color: #80cbc4; /* Grünes Icon im Dark Mode */
+}
+
+body.dark-mode .about-list h3 {
+    color: #80cbc4; /* Heller Grünton für den Titel im Dark Mode */
+}
+
+body.dark-mode .about-footer {
+    color: #80cbc4; /* Heller Grünton für den hervorgehobenen Footer */
+}
+
+body.dark-mode .hero {
+    background-color: #1e1e1e; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helle Schrift */
+}
+
+body.dark-mode .hero-overlay {
+    background: rgba(0, 0, 0, 0.8); /* Stärkerer Overlay-Effekt */
+}
+
+/* Dark Mode für die Seite "Leistungen" */
+body.dark-mode .leistungen {
+    background-color: #121212; /* Dunkler Hintergrund */
+}
+
+body.dark-mode .leistungen div {
+    background-color: #1e1e1e; /* Dunkler Hintergrund für Boxen */
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Etwas stärkere Schatten */
+}
+
+body.dark-mode .leistungen div:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten beim Hover */
+}
+
+body.dark-mode #leistungen-Titel {
+    color: #80cbc4; /* Hellgrüne Titel im Dark Mode */
+}
+
+body.dark-mode .leistungen ul li {
+    color: #e0e0e0; /* Helle Schriftfarbe für Listenelemente */
+}
+
+body.dark-mode .leistungen ul li::before {
+    color: #80cbc4; /* Heller Grünton für Symbole */
+}
+
+body.dark-mode .leistungenContent7 p:first-child {
+    color: #80cbc4; /* Heller Grünton für den ersten Absatz */
+}
+body.dark-mode a {
+    color: #80cbc4; /* Hellgrüne Links */
+}
+
+body.dark-mode a:hover {
+    color: #b2dfdb; /* Hellerer Grünton beim Hover */
+}
+
+/* Dark Mode für Mitarbeitenden-Seite */
+body.dark-mode .mitarbeiter {
+    background-color: #1e1e1e; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helle Schriftfarbe */
+}
+
+body.dark-mode .mitarbeiter img {
+    border-color: #333; /* Rahmenfarbe anpassen */
+}
+
+body.dark-mode #mitarbeiter-details h3,
+body.dark-mode #mitarbeiter-details h4 {
+    color: #80cbc4; /* Hellgrüner Farbton für Überschriften */
+}
+
+body.dark-mode #mitarbeiter-details ul li::before {
+    color: #80cbc4; /* Grünes Häkchen */
+}
+
+body.dark-mode #mitarbeiter-details ul li {
+    color: #e0e0e0; /* Helle Textfarbe */
+}
+
+body.dark-mode .mitarbeiter {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
+}
+
+/* Top-Bar Styles */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4; /* Heller Hintergrund */
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar-left span,
+.top-bar-right span {
+    margin-right: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background: #f4f4f4;
+    color: #439673;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation li {
+    font-size: 18px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #002D13;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 600px; /* Höhe des Bereichs */
+    background-image: url('resources/img6.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Das Bild füllt den Bereich aus */
+    background-position: center; /* Bild ist zentriert */
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: center; /* Text horizontal zentrieren */
+    color: white; /* Weißer Text */
+    text-align: center; /* Text zentriert */
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dunkler transparenter Overlay-Effekt */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: center; /* Text horizontal zentrieren */
+}
+
+.hero h2 {
+    font-size: 40px; /* Schriftgröße des Textes */
+    font-weight: bold;
+    margin: 0; 
+    padding: 0 20px; /* Innenabstand für Lesbarkeit auf kleineren Bildschirmen */
+}
+
+/* Hero2 Section Styles */
+.hero2 {
+    position: relative;
+    height: 400px; /* Höhe des Bereichs */
+    background-image: url('resources/img5.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Das Bild füllt den Bereich aus */
+    background-position: center; /* Bild ist zentriert */
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: center; /* Text horizontal zentrieren */
+    color: white; /* Weißer Text */
+    text-align: left; /* Text zentriert */
+}
+
+.hero-overlay2 {
+    background: rgba(0, 0, 0, 0.4); /* Dunkler transparenter Overlay-Effekt */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: left; /* Text horizontal zentrieren */
+}
+
+.hero2 h2 {
+    font-size: 40px; /* Schriftgröße des Textes */
+    font-weight: bold;
+    margin: 0; 
+    padding: 0 20px; /* Innenabstand für Lesbarkeit auf kleineren Bildschirmen */
+}
+
+/* Hero3 Section Styles */
+.hero3 {
+    position: relative;
+    height: 400px; /* Höhe des Bereichs */
+    background-image: url('resources/img10.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Das Bild füllt den Bereich aus */
+    background-position: center; /* Bild ist zentriert */
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: center; /* Text horizontal zentrieren */
+    color: white; /* Weißer Text */
+    text-align: left; /* Text zentriert */
+}
+
+.hero-overlay3 {
+    background: rgba(0, 0, 0, 0.5); /* Dunkler transparenter Overlay-Effekt */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: left; /* Text horizontal zentrieren */
+}
+
+.hero3 h2 {
+    font-size: 40px; /* Schriftgröße des Textes */
+    font-weight: bold;
+    margin: 0; 
+    padding: 0 20px; /* Innenabstand für Lesbarkeit auf kleineren Bildschirmen */
+}
+
+/* Hero4 Section Styles */
+.hero4 {
+    position: relative;
+    height: 400px; /* Höhe des Bereichs */
+    background-image: url('resources/img7.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Das Bild füllt den Bereich aus */
+    background-position: center; /* Bild ist zentriert */
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: center; /* Text horizontal zentrieren */
+    color: white; /* Weißer Text */
+    text-align: left; /* Text zentriert */
+}
+
+.hero-overlay4 {
+    background: rgba(0, 0, 0, 0.5); /* Dunkler transparenter Overlay-Effekt */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Text vertikal zentrieren */
+    justify-content: left; /* Text horizontal zentrieren */
+}
+
+.hero4 h2 {
+    font-size: 40px; /* Schriftgröße des Textes */
+    font-weight: bold;
+    margin: 0; 
+    padding: 0 20px; /* Innenabstand für Lesbarkeit auf kleineren Bildschirmen */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #285867;
+    border-top: 1px solid #ddd;
+}
+
+.content {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Allgemeine Stile */
+#about {
+    padding: 40px 20px;
+    color: #333; /* Dunkler Text */
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding-left: 11%;
+    padding-right: 11%;
+    background-color: #f4f4f4;;
+}
+
+.about-text, .about-list {
+    flex: 1;
+    min-width: 300px; /* Mindestbreite für kleinere Bildschirme */
+}
+
+/* Stile für die Liste */
+.about-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.about-list li::before {
+    content: '✔'; /* Symbol vor jedem Punkt */
+    position: absolute;
+    left: 0;
+    color: #008080; /* Akzentfarbe */
+    font-size: 20px;
+}
+
+/* Hervorgehobener Footer */
+.about-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0b0b02; /* Dunkler Grünton */
+}
+
+/* Anfangszustand der Liste */
+.animated-list {
+    list-style: none; /* Entfernt Standard-Listensymbole */
+    padding: 0;
+    margin: 0;
+}
+
+.animated-list li {
+    opacity: 0; /* Unsichtbar zu Beginn */
+    transform: translateX(-20px); /* Leicht nach links verschoben */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Verzögerung zwischen den einzelnen Listenelementen */
+.animated-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.animated-list li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.animated-list li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.animated-list li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animation definieren */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Sichtbar */
+        transform: translateX(0); /* Zurück in die Ausgangsposition */
+    }
+}
+
+.leistungen {
+    align-items: center;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+/* Styling für den Abschnitt der Leistungen */
+.leistungen {
+    display: grid; /* Verwendung eines Grid-Layouts */
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    gap: 20px; /* Abstand zwischen den Elementen */
+    padding: 20px 5%; /* Innenabstand */
+    background-color: #f9f9f9; /* Heller Hintergrund */
+}
+
+/* Allgemeines Styling für die Unterteilungen */
+.leistungen div {
+    background-color: white; /* Weißer Hintergrund */
+    padding: 15px 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Übergang für Hover */
+}
+
+.leistungen div:hover {
+    transform: translateY(-5px); /* Schwebt leicht nach oben */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stärkerer Schatten */
+}
+
+/* Überschriften der Kategorien */
+#leistungen-Titel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004d40; /* Dunkelgrün */
+    margin-bottom: 10px;
+}
+
+/* Listen der Leistungen */
+.leistungen ul {
+    list-style: none; /* Standard-Aufzählungszeichen entfernen */
+    padding: 0;
+    margin: 0;
+}
+
+.leistungen ul li {
+    position: relative;
+    padding-left: 25px; /* Platz für das Icon */
+    margin-bottom: 10px;
+}
+
+.leistungen ul li::before {
+    content: '✔'; /* Symbol vor jedem Listeneintrag */
+    position: absolute;
+    left: 0;
+    color: #00796b; /* Heller Grünton */
+    font-size: 18px;
+}
+
+/* Styling für den AFPPS-Abschnitt */
+.leistungenContent7 {
+    grid-column: span 2; /* Nimmt die gesamte Breite ein */
+    text-align: justify;
+}
+
+.leistungenContent7 a {
+    color: #00796b; /* Heller Grünton für Links */
+}
+
+.leistungenContent7 a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+.leistungenContent7 p:first-child {
+    font-weight: bold;
+    color: #004d40; /* Optional: Dunkelgrüner Farbton für den Titel */
+    font-size: 18px; /* Optional: Schriftgröße für den Titel */
+    margin-bottom: 10px; /* Abstand nach dem Titel */
+}
+
+/* Responsive Anpassung */
+@media screen and (max-width: 768px) {
+    .leistungen {
+        grid-template-columns: 1fr; /* Einzelne Spalte auf kleinen Bildschirmen */
+    }
+}
+
+#underline {
+    text-decoration: underline;
+    text-decoration-color: rgb(111, 111, 232);
+    text-align: left;
+}
+
+.konAn {
+    display: flex;
+    flex-direction: column; /* Ordnet den Titel über den Inhalt */
+    margin: 20px 0;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+/* Mitarbeitenden */
+/* Container für Mitarbeitende */
+.mitarbeiter {
+    display: flex; /* Flexbox für horizontale Anordnung */
+    align-items: flex-start; /* Elemente am oberen Rand ausrichten */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+    margin: 20px 0; /* Abstand zwischen den Mitarbeitenden */
+    background-color: #f9f9f9; /* Heller Hintergrund */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken für den Container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+/* Bildstil */
+.mitarbeiter img {
+    flex: 0 0 30%; /* Bild nimmt 40% der Breite ein */
+    max-width: 30%; /* Maximale Breite des Bildes */
+    height: auto; /* Höhe passt sich proportional an */
+    border-radius: 10px; /* Leicht abgerundete Ecken */
+    object-fit: cover; /* Bild wird passend zugeschnitten */
+    border: 2px solid #ddd; /* Leichter Rahmen */
+}
+
+/* Textstil */
+#mitarbeiter-details {
+    flex: 1; /* Textbereich nimmt restliche Breite ein */
+    margin-left: 5%;
+}
+
+#mitarbeiter-details h3 {
+    margin: 0;
+    color: #004d40; /* Dunkelgrün */
+    font-size: 25px;
+}
+
+#mitarbeiter-details h4 {
+    margin: 5px 0;
+    color: #00796b; /* Hellerer Grünton */
+    font-size: 20px;
+}
+
+#mitarbeiter-details ul {
+    list-style: none; /* Entfernt Standard-Aufzählungszeichen */
+    padding: 0;
+    margin-top: 10px;
+}
+
+#mitarbeiter-details ul li {
+    padding-left: 25px; /* Einzug für Symbol */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#mitarbeiter-details ul li::before {
+    content: '✔'; /* Symbol vor jedem Listeneintrag */
+    color: #004d40; /* Gleicher Grünton wie Überschrift */
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/*#mapsTitle {
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgb(111, 111, 232);
+    margin-bottom: 20px; 
+    text-align: left;
+    padding-left: 5%;
+}*/
+
+#mapsContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; /* Abstand zwischen Karte und Text */
+}
+
+#maps {
+    flex: 1; /* Karte nimmt automatisch den verfügbaren Platz ein */
+    max-width: 600px;
+}
+
+#maps iframe {
+    width: 100%; /* Die Karte füllt die Breite ihres Containers */
+    height: 450px; /* Feste Höhe */
+    border: none; /* Kein Rahmen */
+}
+
+#konAn2 {
+    flex: 1; /* Text passt sich an den verbleibenden Platz an */
+    margin-left: 70px; /* Abstand zwischen Karte und Text */
+    font-size: 20px;
+}
+
+#konAn2 p {
+    line-height: 1.6; /* Lesbarkeit erhöhen */
+}
+  
+#konAn2 a {
+    color: blue;
+    text-decoration: none;
+}
+  
+#konAn2 a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column; /* Navigation vertikal für kleinere Geräte */
+    }
+    button#dark-mode-toggle {
+        top: 5px;
+        right: 10px; /* Position des Buttons für kleinere Geräte */
+    }
+}
+
+/* Für Tablets (768px bis 1024px) */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column; /* Navigation untereinander anzeigen */
+    }
+    .mitarbeiter img {
+        max-width: 60%; /* Bildgröße anpassen */
+    }
+}
+
+/* Für Smartphones (unter 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .navigation ul {
+        flex-direction: column; /* Menüeinträge vertikal stapeln */
+    }
+    .mitarbeiter {
+        flex-direction: column; /* Text und Bild übereinander anordnen */
+    }
+    .mitarbeiter img {
+        max-width: 80%; /* Bildbreite reduzieren */
+    }
+    .leistungen {
+        grid-template-columns: 1fr; /* Einspaltiges Layout für kleinere Bildschirme */
+    }
+    .hero, .hero2, .hero3, .hero4 {
+        height: 300px; /* Hero-Bereich für Mobilgeräte anpassen */
+    }
+}
+
+
+
